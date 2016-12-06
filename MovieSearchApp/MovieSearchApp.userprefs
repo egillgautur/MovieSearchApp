@@ -1,0 +1,24 @@
+﻿<Properties StartupConfiguration="{848D8BD2-B5F5-4F21-83D3-EB40CD1D208A}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/Service/iosImageImp.cs">
+    <Files>
+      <File FileName="iOS/Controllers/MovieSearchController.cs" Line="32" Column="3" />
+      <File FileName="iOS/Service/iosImageImp.cs" Line="36" Column="1" />
+      <File FileName="iOS/Movie.cs" Line="8" Column="32" />
+      <File FileName="iOS/Controllers/TopRatedListController.cs" Line="21" Column="33" />
+      <File FileName="iOS/Main.cs" Line="17" Column="1" />
+      <File FileName="MovieDownload/ImageDownloader.cs" Line="34" Column="1" />
+      <File FileName="iOS/Controllers/MovieListController.cs" Line="28" Column="62" />
+      <File FileName="iOS/Controllers/MovieListSource.cs" Line="10" Column="3" />
+      <File FileName="iOS/Controllers/MovieDetailController.cs" Line="21" Column="3" />
+      <File FileName="iOS/AppDelegate.cs" Line="25" Column="4" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.MovieSearchApp.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.galaxyNexus" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.MovieSearchApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.8F408F6E-ECEB-48CA-89F8-DCEDDE43DC64" />
+  <MultiItemStartupConfigurations />
+</Properties>

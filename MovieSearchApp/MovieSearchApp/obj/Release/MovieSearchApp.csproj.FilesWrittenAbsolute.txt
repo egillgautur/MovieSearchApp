@@ -1,0 +1,5 @@
+/Users/gautur/Desktop/T-514-MAPP/MovieSearch/MovieSearchApp/MovieSearchApp/obj/Release/.NETPortable,Version=v4.5,Profile=Profile7.AssemblyAttribute.cs
+/Users/gautur/Desktop/T-514-MAPP/MovieSearch/MovieSearchApp/MovieSearchApp/bin/Release/MovieSearchApp.dll
+/Users/gautur/Desktop/T-514-MAPP/MovieSearch/MovieSearchApp/MovieSearchApp/obj/Release/MovieSearchApp.dll
+/Users/gautur/Desktop/T-514-MAPP/MovieSearch/MovieSearchApp/MovieSearchApp/bin/Release/Newtonsoft.Json.dll
+/Users/gautur/Desktop/T-514-MAPP/MovieSearch/MovieSearchApp/MovieSearchApp/bin/Release/DM.MovieApi.dll
