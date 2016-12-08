@@ -1,21 +1,22 @@
 ﻿<Properties StartupConfiguration="{5AE017F0-AD27-4834-971D-80F31CA588EB}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Droid/Resources/layout/MovieListItem.axml">
     <Files>
       <File FileName="Droid/MainActivity.cs" Line="8" Column="19" />
-      <File FileName="Droid/MovieSearchFragment.cs" Line="30" Column="50" />
+      <File FileName="Droid/MovieSearchFragment.cs" Line="45" Column="11" />
       <File FileName="Droid/ToolbarTabs.cs" Line="19" Column="2" />
       <File FileName="Droid/TabsFragmentPagerAdapter.cs" Line="5" Column="1" />
       <File FileName="Droid/MovieListActivity.cs" Line="28" Column="4" />
-      <File FileName="Droid/MovieListAdapter.cs" Line="30" Column="20" />
+      <File FileName="Droid/MovieListAdapter.cs" Line="50" Column="49" />
       <File FileName="Droid/TopRatedFragment.cs" Line="18" Column="2" />
       <File FileName="Droid/Resources/values/color.xml" Line="1" Column="1" />
       <File FileName="Droid/Resources/values/Strings.xml" Line="1" Column="1" />
       <File FileName="Droid/Resources/values/styles.xml" Line="7" Column="11" />
       <File FileName="Droid/Properties/AndroidManifest.xml" Line="4" Column="100" />
+      <File FileName="Droid/Resources/layout/MovieListItem.axml" Line="38" Column="31" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.MovieSearchApp.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.galaxyNexus" AndroidDesignerPreferredTheme="MyTheme" />
+  <MonoDevelop.Ide.ItemProperties.MovieSearchApp.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.galaxyNexus" AndroidDesignerPreferredTheme="Theme.DeviceDefault" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

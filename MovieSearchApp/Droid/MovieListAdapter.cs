@@ -11,15 +11,17 @@ using Android.Widget;
 
 namespace MovieSearchApp.Droid
 {
+	using Android.Graphics;
+	using Java.IO;
 	using MovieSearchApp.Models;
 
-	public class MovieListAdapter : BaseAdapter<Movie>
+	public class MovieListAdapter : BaseAdapter<Models.Movie>
 	{
 		private Activity _context;
 
-		private List<Movie> _movieList;
+		private List<Models.Movie> _movieList;
 
-		public MovieListAdapter(Activity context, List<Movie> movieList)
+		public MovieListAdapter(Activity context, List<Models.Movie> movieList)
 		{
 			this._context = context;
 			this._movieList = movieList;
@@ -43,11 +45,9 @@ namespace MovieSearchApp.Droid
 			view.FindViewById<TextView>(Resource.Id.year).Text = movie.ReleaseYear;
 			view.FindViewById<TextView>(Resource.Id.castMembers).Text = movie.CastMembers;
 
-			var resourceId = this._context.Resources.GetIdentifier(
-				movie.ImageName,
-				"drawable",
-				this._context.PackageName);
-			view.FindViewById<ImageView>(Resource.Id.picture).SetBackgroundResource(resourceId);
+			var img = new File(movie.ImageName);
+			var bmimg = BitmapFactory.DecodeFile(img.AbsolutePath);
+			view.FindViewById<ImageView>(Resource.Id.image).SetImageBitmap(bmimg);
 
 			return view;
 		}
@@ -60,7 +60,7 @@ namespace MovieSearchApp.Droid
 			}
 		}
 
-		public override Movie this[int position]
+		public override Models.Movie this[int position]
 		{
 			get
 			{
