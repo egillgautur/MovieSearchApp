@@ -2478,6 +2478,7 @@ containing a value of this type.
         public static final int support_simple_spinner_dropdown_item=0x7f030034;
         public static final int tabbar=0x7f030035;
         public static final int toolbar=0x7f030036;
+        public static final int topratedlayout=0x7f030037;
     }
     public static final class string {
         public static final int ToolbarTitle=0x7f0a0017;

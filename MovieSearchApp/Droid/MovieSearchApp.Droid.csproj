@@ -109,6 +109,7 @@
     <AndroidResource Include="Resources\layout\tabbar.xml" />
     <AndroidResource Include="Resources\layout\MovieList.axml" />
     <AndroidResource Include="Resources\values\styles.xml" />
+    <AndroidResource Include="Resources\layout\TopRatedLayout.axml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Service\" />

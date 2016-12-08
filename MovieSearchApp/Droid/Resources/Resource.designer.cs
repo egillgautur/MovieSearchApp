@@ -2466,6 +2466,9 @@ namespace MovieSearchApp.Droid
 			// aapt resource value: 0x7f030036
 			public const int toolbar = 2130903094;
 			
+			// aapt resource value: 0x7f030037
+			public const int TopRatedLayout = 2130903095;
+			
 			static Layout()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();

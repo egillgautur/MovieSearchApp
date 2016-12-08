@@ -15,6 +15,7 @@ namespace MovieSearchApp.Droid
 	[Activity(Label = "Movie Search App", Icon = "@drawable/icon", MainLauncher = true)]
 	public class MainActivity : FragmentActivity
 	{
+		private ToolbarTabs _toolbarTabs = new ToolbarTabs();
 		protected override void OnCreate(Bundle bundle)
 		{
 			base.OnCreate(bundle);
@@ -23,7 +24,7 @@ namespace MovieSearchApp.Droid
 			this.SetContentView(Resource.Layout.Main);
 
 			var toolbar = this.FindViewById<Toolbar>(Resource.Id.toolbar);
-			ToolbarTabs.Construct(this, toolbar);
+			_toolbarTabs.Construct(this, toolbar);
 		}
 	}
 }

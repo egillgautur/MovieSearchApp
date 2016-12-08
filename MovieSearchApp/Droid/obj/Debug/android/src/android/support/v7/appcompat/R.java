@@ -2351,11 +2351,10 @@ containing a value of this type.
         public static int normal=0x7f090022;
         public static int parallax=0x7f090011;
         public static int parentPanel=0x7f090046;
-        public static int picture=0x7f090079;
         public static int pin=0x7f090012;
         public static int progress_circular=0x7f090006;
         public static int progress_horizontal=0x7f090007;
-        public static int promptTextView=0x7f09007a;
+        public static int promptTextView=0x7f090079;
         public static int radio=0x7f090054;
         public static int right=0x7f09001a;
         public static int screen=0x7f09002f;
@@ -2364,8 +2363,8 @@ containing a value of this type.
         public static int scrollIndicatorUp=0x7f09004b;
         public static int scrollView=0x7f09004c;
         public static int scrollable=0x7f090024;
-        public static int searchButton=0x7f09007c;
-        public static int searchText=0x7f09007b;
+        public static int searchButton=0x7f09007b;
+        public static int searchText=0x7f09007a;
         public static int search_badge=0x7f09005e;
         public static int search_bar=0x7f09005d;
         public static int search_button=0x7f09005f;
@@ -2386,6 +2385,7 @@ containing a value of this type.
         public static int snackbar_text=0x7f09006b;
         public static int snap=0x7f09000f;
         public static int spacer=0x7f090045;
+        public static int spinner=0x7f09007c;
         public static int split_action_bar=0x7f090008;
         public static int src_atop=0x7f090030;
         public static int src_in=0x7f090031;
@@ -2478,6 +2478,7 @@ containing a value of this type.
         public static int support_simple_spinner_dropdown_item=0x7f030034;
         public static int tabbar=0x7f030035;
         public static int toolbar=0x7f030036;
+        public static int topratedlayout=0x7f030037;
     }
     public static final class string {
         public static int ToolbarTitle=0x7f0a0017;

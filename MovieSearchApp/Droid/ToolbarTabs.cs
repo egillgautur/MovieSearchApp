@@ -17,9 +17,10 @@ namespace MovieSearchApp.Droid
     using Android.Support.V4.App;
     using Android.Support.V4.View;
 
-    public static class ToolbarTabs
+    public class ToolbarTabs
     {
-        public static void Construct(FragmentActivity activity, Toolbar toolbar)
+		//private TopRatedFragment _topRatedFragment = new TopRatedFragment();
+        public void Construct(FragmentActivity activity, Toolbar toolbar)
         {
             var fragments = new Fragment[]
             {
@@ -32,12 +33,24 @@ namespace MovieSearchApp.Droid
                 "Top Rated"
             });
 
-            var viewPager = activity.FindViewById<ViewPager>(Resource.Id.viewpager);
+			var viewPager = activity.FindViewById<ViewPager>(Resource.Id.viewpager); 
             viewPager.Adapter = new TabsFragmentPagerAdapter(activity.SupportFragmentManager, fragments, titles);
+			viewPager.OffscreenPageLimit = 0; 
 
-            // Give the TabLayout the ViewPager
-            var tabLayout = activity.FindViewById<TabLayout>(Resource.Id.sliding_tabs);
+			// Give the TabLayout the ViewPager
+			var tabLayout = activity.FindViewById<TabLayout>(Resource.Id.sliding_tabs);
             tabLayout.SetupWithViewPager(viewPager);
+
+			/*var tabLayout = activity.FindViewById<TabLayout>(Resource.Id.sliding_tabs);
+			tabLayout.SetupWithViewPager(viewPager);
+			tabLayout.TabSelected += (sender, args) =>
+				{
+					var tab = args.Tab;
+					if (tab.Position == 1)
+					{
+						_topRatedFragment.getTopRated();
+					}
+				};*/
 
             SetToolbar(activity, toolbar);
         }
