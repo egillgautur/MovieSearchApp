@@ -24,6 +24,7 @@ namespace MovieSearchApp.Droid
 			var jsonStr = this.Intent.GetStringExtra("movieList");
 			var movieList = JsonConvert.DeserializeObject<List<Models.Movie>>(jsonStr);
 			this.ListAdapter = new MovieListAdapter(this, movieList);
+			//this.ListView.ItemClick = 
 			// Create your application here
 		}
 

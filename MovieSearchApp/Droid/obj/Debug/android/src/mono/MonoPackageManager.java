@@ -99,7 +99,6 @@ class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		/* We need to ensure that "MovieSearchApp.Droid.dll" comes first in this list. */
 		"MovieSearchApp.Droid.dll",
-		"Java.Interop.dll",
 		"System.Runtime.dll",
 		"Newtonsoft.Json.dll",
 		"DM.MovieApi.dll",
@@ -135,5 +134,5 @@ class MonoPackageManager_Resources {
 	};
 	public static final String[] Dependencies = new String[]{
 	};
-	public static final String ApiPackageName = "Mono.Android.Platform.ApiLevel_23";
+	public static final String ApiPackageName = null;
 }

@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="teamballoon.moviesearchapp">
-  <uses-sdk android:minSdkVersion="15" android:targetSdkVersion="25" />
+  <uses-sdk android:minSdkVersion="15" android:targetSdkVersion="23" />
   <uses-permission android:name="android.permission.INTERNET" />
-  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <application android:label="MovieSearchApp" android:icon="@drawable/icon" android:theme="@style/MyTheme" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
     <activity android:icon="@drawable/icon" android:label="Movie Search App" android:name="md58f771e592025275222ce2d26aa1d1316.MainActivity">
       <intent-filter>
