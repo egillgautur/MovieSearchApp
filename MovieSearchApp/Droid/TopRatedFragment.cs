@@ -59,6 +59,12 @@ namespace MovieSearchApp.Droid
 			spinner.Visibility = ViewStates.Gone;
 			//this.StartActivity(intent);
 			listAdapter.Adapter = new MovieListAdapter(context, this._movieList);
+			listAdapter.ItemClick += (sender, args) =>
+			{
+				var intent = new Intent(this.Context, typeof(MovieDetailActivity));
+				intent.PutExtra("Movie Details", JsonConvert.SerializeObject(this._movieList[args.Position]));
+				this.StartActivity(intent);
+			};
 		}
 
 	}

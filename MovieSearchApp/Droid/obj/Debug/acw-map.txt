@@ -22,6 +22,10 @@ MovieSearchApp.Droid.TopRatedFragment, MovieSearchApp.Droid;md58f771e59202527522
 MovieSearchApp.Droid.TopRatedFragment, MovieSearchApp.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md58f771e592025275222ce2d26aa1d1316.TopRatedFragment
 MovieSearchApp.Droid.TopRatedFragment;md58f771e592025275222ce2d26aa1d1316.TopRatedFragment
 moviesearchapp.droid.TopRatedFragment;md58f771e592025275222ce2d26aa1d1316.TopRatedFragment
+MovieSearchApp.Droid.MovieDetailActivity, MovieSearchApp.Droid;md58f771e592025275222ce2d26aa1d1316.MovieDetailActivity
+MovieSearchApp.Droid.MovieDetailActivity, MovieSearchApp.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md58f771e592025275222ce2d26aa1d1316.MovieDetailActivity
+MovieSearchApp.Droid.MovieDetailActivity;md58f771e592025275222ce2d26aa1d1316.MovieDetailActivity
+moviesearchapp.droid.MovieDetailActivity;md58f771e592025275222ce2d26aa1d1316.MovieDetailActivity
 Android.Support.V4.View.ViewPager/IOnPageChangeListenerImplementor, Xamarin.Android.Support.v4;mono.android.support.v4.view.ViewPager_OnPageChangeListenerImplementor
 Android.Support.V4.View.ViewPager+IOnPageChangeListenerImplementor, Xamarin.Android.Support.v4, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.android.support.v4.view.ViewPager_OnPageChangeListenerImplementor
 Android.Support.V4.View.ViewPager.IOnPageChangeListenerImplementor;mono.android.support.v4.view.ViewPager_OnPageChangeListenerImplementor

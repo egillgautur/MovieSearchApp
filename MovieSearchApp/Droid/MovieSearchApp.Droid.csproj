@@ -90,6 +90,7 @@
     <Compile Include="MovieSearchFragment.cs" />
     <Compile Include="ToolbarTabs.cs" />
     <Compile Include="TopRatedFragment.cs" />
+    <Compile Include="MovieDetailActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -114,6 +115,7 @@
     <AndroidResource Include="Resources\layout\MovieList.axml" />
     <AndroidResource Include="Resources\values\styles.xml" />
     <AndroidResource Include="Resources\layout\TopRatedLayout.axml" />
+    <AndroidResource Include="Resources\layout\MovieDetailLayout.axml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Service\" />

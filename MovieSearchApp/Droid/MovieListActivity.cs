@@ -21,13 +21,19 @@ namespace MovieSearchApp.Droid
 		{
 			base.OnCreate(savedInstanceState);
 
+			// Create your application here
+
 			var jsonStr = this.Intent.GetStringExtra("movieList");
 			var movieList = JsonConvert.DeserializeObject<List<Models.Movie>>(jsonStr);
 			this.ListAdapter = new MovieListAdapter(this, movieList);
-			//this.ListView.ItemClick = 
-			// Create your application here
-		}
+			this.ListView.ItemClick += (sender, args) =>
+			{
+				var intent = new Intent(this, typeof(MovieDetailActivity));
+				intent.PutExtra("Movie Details", JsonConvert.SerializeObject(movieList[args.Position]));
+				this.StartActivity(intent);
+			};
 
+		}
 
 	}
 }

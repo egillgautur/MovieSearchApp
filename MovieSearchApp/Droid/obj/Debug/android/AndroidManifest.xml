@@ -10,6 +10,7 @@
       </intent-filter>
     </activity>
     <activity android:label="Movie list" android:name="md58f771e592025275222ce2d26aa1d1316.MovieListActivity" />
+    <activity android:label="MovieDetailActivity" android:name="md58f771e592025275222ce2d26aa1d1316.MovieDetailActivity" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="teamballoon.moviesearchapp.mono.MonoRuntimeProvider.__mono_init__" />
     <!--suppress ExportedReceiver-->
     <receiver android:name="mono.android.Seppuku">
