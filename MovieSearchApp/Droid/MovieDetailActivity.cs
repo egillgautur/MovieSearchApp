@@ -23,12 +23,12 @@ namespace MovieSearchApp.Droid
 		{
 			base.OnCreate(savedInstanceState);
 			this.SetContentView(Resource.Layout.MovieDetailLayout);
+
 			// Create your application here
+
 			var json = this.Intent.GetStringExtra("Movie Details");
 			var movieList = JsonConvert.DeserializeObject<Models.Movie>(json);
 
-
-			//var view = this._context.LayoutInflater.Inflate(Resource.Layout.MovieDetailLayout, null);
 
 			var title = this.FindViewById<TextView>(Resource.Id.title).Text = movieList.Name;
 			var info = this.FindViewById<TextView>(Resource.Id.info).Text = movieList.ReleaseYear + " | " + movieList.Runtime + " | " + movieList.Genre;

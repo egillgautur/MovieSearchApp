@@ -1,20 +1,13 @@
-﻿using System;
-
-using Android.Content;
+﻿using Android.Content;
 using Android.OS;
 using Android.Views;
 using Android.Widget;
 using MovieSearchApp.droid;
 using System.Collections.Generic;
 
-using Fragment = Android.Support.V4.App.Fragment;
-
 namespace MovieSearchApp.Droid
 {
-	using MovieSearchApp.Models;
-	using Android.Views.InputMethods;
 	using Newtonsoft.Json;
-	using System.Threading.Tasks;
 	using Android.App;
 
 	public class TopRatedFragment : Android.Support.V4.App.Fragment
@@ -43,7 +36,6 @@ namespace MovieSearchApp.Droid
 
 			// Get our UI controls from the loaded layout:
 			this._rootView = inflater.Inflate(Resource.Layout.TopRatedLayout, container, false);
-			//getTopRated();
 
 			return _rootView;
 		}
@@ -54,10 +46,7 @@ namespace MovieSearchApp.Droid
 			spinner.Visibility = Android.Views.ViewStates.Visible;
 			var listAdapter = this._rootView.FindViewById<ListView>(Resource.Id.movielistview);
 			this._movieList = await _apiService.getMovie(false, "yolo");
-			//var intent = new Intent(this.Context, typeof(MovieListActivity));
-			//intent.PutExtra("movieList", JsonConvert.SerializeObject(this._movieList));
 			spinner.Visibility = ViewStates.Gone;
-			//this.StartActivity(intent);
 			listAdapter.Adapter = new MovieListAdapter(context, this._movieList);
 			listAdapter.ItemClick += (sender, args) =>
 			{

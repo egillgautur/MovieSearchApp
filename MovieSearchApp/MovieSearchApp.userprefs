@@ -1,14 +1,19 @@
 ﻿<Properties StartupConfiguration="{5AE017F0-AD27-4834-971D-80F31CA588EB}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Droid/Resources/layout/TopRatedLayout.axml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Droid/TopRatedFragment.cs">
     <Files>
       <File FileName="Droid/MainActivity.cs" Line="30" Column="2" />
       <File FileName="Droid/MovieSearchFragment.cs" Line="49" Column="4" />
       <File FileName="Droid/Properties/AndroidManifest.xml" Line="5" Column="12" />
-      <File FileName="Droid/TopRatedFragment.cs" Line="55" Column="66" />
+      <File FileName="Droid/TopRatedFragment.cs" Line="58" Column="81" />
       <File FileName="MovieSearchApp/Service/ApiService.cs" Line="101" Column="1" />
       <File FileName="MovieDownload/IImageStorage.cs" Line="1" Column="1" />
       <File FileName="MovieDownload/ImageDownloader.cs" Line="34" Column="1" />
       <File FileName="Droid/Resources/layout/TopRatedLayout.axml" Line="1" Column="1" />
+      <File FileName="Droid/MovieDetailActivity.cs" Line="42" Column="2" />
+      <File FileName="Droid/MovieListActivity.cs" Line="36" Column="4" />
+      <File FileName="Droid/MovieListAdapter.cs" Line="50" Column="1" />
+      <File FileName="Droid/TabsFragmentPagerAdapter.cs" Line="1" Column="1" />
+      <File FileName="Droid/ToolbarTabs.cs" Line="29" Column="15" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

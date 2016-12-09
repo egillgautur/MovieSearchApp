@@ -11,7 +11,6 @@ using Fragment = Android.Support.V4.App.Fragment;
 
 namespace MovieSearchApp.Droid
 {
-    using MovieSearchApp.Models;
     using Android.Views.InputMethods;
     using Newtonsoft.Json;
 
@@ -51,7 +50,6 @@ namespace MovieSearchApp.Droid
 				manager.HideSoftInputFromWindow(searchText.WindowToken, 0);
 				this._movieList = await _apiService.getMovie(true, searchText.Text);
 				var intent = new Intent(this.Context, typeof(MovieListActivity));
-				//intent.PutStringArrayListExtra("MovieList", this._movieL.movieList.Select(p => p.Name).ToArray());
 				intent.PutExtra("movieList", JsonConvert.SerializeObject(this._movieList));
 				spinner.Visibility = ViewStates.Gone;
 				this.StartActivity(intent);

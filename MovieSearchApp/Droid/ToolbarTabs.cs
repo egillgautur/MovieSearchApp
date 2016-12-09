@@ -1,15 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Android.App;
-using Android.Content;
-using Android.OS;
+﻿using Android.App;
 using Android.Runtime;
-using Android.Views;
 using Android.Widget;
-using MovieSearchApp.Droid;
 
 namespace MovieSearchApp.Droid
 {
@@ -35,23 +26,19 @@ namespace MovieSearchApp.Droid
 
 			var viewPager = activity.FindViewById<ViewPager>(Resource.Id.viewpager); 
             viewPager.Adapter = new TabsFragmentPagerAdapter(activity.SupportFragmentManager, fragments, titles);
-			//viewPager.OffscreenPageLimit = 0; 
 
-			// Give the TabLayout the ViewPager
-			/*var tabLayout = activity.FindViewById<TabLayout>(Resource.Id.sliding_tabs);
-            tabLayout.SetupWithViewPager(viewPager);*/
 
 			var tabLayout = activity.FindViewById<TabLayout>(Resource.Id.sliding_tabs);
 			tabLayout.SetupWithViewPager(viewPager);
 			viewPager.PageSelected += (sender, args) =>
-				{
-				//viewPager.SetCurrentItem(args.Position, true);
+			{
 				var tab = args.Position;
-					if (tab == 1)
-					{
-						_topRatedFragment.getTopRated(activity);
-					}
-				};
+
+				if (tab == 1)
+				{
+					_topRatedFragment.getTopRated(activity);
+				}
+			};
 
             SetToolbar(activity, toolbar);
         }

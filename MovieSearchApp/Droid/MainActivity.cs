@@ -1,12 +1,6 @@
 ﻿using Android.App;
-using Android.Runtime;
 using Android.Widget;
 using Android.OS;
-using Android.Content;
-using MovieSearchApp.Droid;
-using Newtonsoft.Json;
-using System.Linq;
-using MovieSearchApp.droid;
 using Android.Support.V4.App;
 
 namespace MovieSearchApp.Droid
