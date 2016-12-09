@@ -2044,6 +2044,9 @@ namespace MovieSearchApp.Droid
 			// aapt resource value: 0x7f09007d
 			public const int movieTextView = 2131296381;
 			
+			// aapt resource value: 0x7f09008d
+			public const int movielistview = 2131296397;
+			
 			// aapt resource value: 0x7f09002e
 			public const int multiply = 2131296302;
 			

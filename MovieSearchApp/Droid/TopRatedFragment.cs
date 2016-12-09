@@ -15,11 +15,13 @@ namespace MovieSearchApp.Droid
 	using Android.Views.InputMethods;
 	using Newtonsoft.Json;
 	using System.Threading.Tasks;
+	using Android.App;
 
-	public class TopRatedFragment : Fragment
+	public class TopRatedFragment : Android.Support.V4.App.Fragment
 	{
 		private List<Models.Movie> _movieList;
 		private ApiService _apiService;
+		private View _rootView;
 
 		public override void OnCreate(Bundle savedInstanceState)
 		{
@@ -38,24 +40,26 @@ namespace MovieSearchApp.Droid
 			base.OnCreateView(inflater, container, savedInstanceState);
 			// Use this to return your custom view for this Fragment
 
-			var rootView = inflater.Inflate(Resource.Layout.TopRatedLayout, container, false);
+
 			// Get our UI controls from the loaded layout:
+			this._rootView = inflater.Inflate(Resource.Layout.TopRatedLayout, container, false);
+			//getTopRated();
 
-			getTopRated(rootView);
-
-			return rootView;
+			return _rootView;
 		}
 
-		public async void getTopRated(View rootView) { 
-			var spinner = rootView.FindViewById<ProgressBar>(Resource.Id.spinner);
+		public async void getTopRated(Activity context) { 
+			var spinner = _rootView.FindViewById<ProgressBar>(Resource.Id.spinner);
 			spinner.Visibility = ViewStates.Invisible;
 			spinner.Visibility = Android.Views.ViewStates.Visible;
-
-			this._movieList = await _apiService.getMovie(false, "");
-			var intent = new Intent(this.Context, typeof(MovieListActivity));
-			intent.PutExtra("movieList", JsonConvert.SerializeObject(this._movieList));
+			var listAdapter = this._rootView.FindViewById<ListView>(Resource.Id.movielistview);
+			this._movieList = await _apiService.getMovie(false, "yolo");
+			//var intent = new Intent(this.Context, typeof(MovieListActivity));
+			//intent.PutExtra("movieList", JsonConvert.SerializeObject(this._movieList));
 			spinner.Visibility = ViewStates.Gone;
-			this.StartActivity(intent);
+			//this.StartActivity(intent);
+			listAdapter.Adapter = new MovieListAdapter(context, this._movieList);
 		}
+
 	}
 }

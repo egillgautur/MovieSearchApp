@@ -26,5 +26,7 @@ namespace MovieSearchApp.Droid
 			this.ListAdapter = new MovieListAdapter(this, movieList);
 			// Create your application here
 		}
+
+
 	}
 }

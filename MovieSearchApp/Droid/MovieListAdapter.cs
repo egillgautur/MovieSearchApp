@@ -11,6 +11,7 @@ using Android.Widget;
 
 namespace MovieSearchApp.Droid
 {
+	//using System.IO;
 	using Android.Graphics;
 	using Java.IO;
 	using MovieSearchApp.Models;
@@ -67,5 +68,7 @@ namespace MovieSearchApp.Droid
 				return this._movieList[position];
 			}
 		}
+
+
 	}
 }

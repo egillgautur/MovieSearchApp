@@ -19,13 +19,13 @@ namespace MovieSearchApp.Droid
 
     public class ToolbarTabs
     {
-		//private TopRatedFragment _topRatedFragment = new TopRatedFragment();
+		private TopRatedFragment _topRatedFragment = new TopRatedFragment();
         public void Construct(FragmentActivity activity, Toolbar toolbar)
         {
             var fragments = new Fragment[]
             {
 				new MovieSearchFragment(),
-                new TopRatedFragment()
+				_topRatedFragment
             };
             var titles = CharSequence.ArrayFromStringArray(new[]
             {
@@ -35,22 +35,23 @@ namespace MovieSearchApp.Droid
 
 			var viewPager = activity.FindViewById<ViewPager>(Resource.Id.viewpager); 
             viewPager.Adapter = new TabsFragmentPagerAdapter(activity.SupportFragmentManager, fragments, titles);
-			viewPager.OffscreenPageLimit = 0; 
+			//viewPager.OffscreenPageLimit = 0; 
 
 			// Give the TabLayout the ViewPager
-			var tabLayout = activity.FindViewById<TabLayout>(Resource.Id.sliding_tabs);
-            tabLayout.SetupWithViewPager(viewPager);
-
 			/*var tabLayout = activity.FindViewById<TabLayout>(Resource.Id.sliding_tabs);
+            tabLayout.SetupWithViewPager(viewPager);*/
+
+			var tabLayout = activity.FindViewById<TabLayout>(Resource.Id.sliding_tabs);
 			tabLayout.SetupWithViewPager(viewPager);
-			tabLayout.TabSelected += (sender, args) =>
+			viewPager.PageSelected += (sender, args) =>
 				{
-					var tab = args.Tab;
-					if (tab.Position == 1)
+				//viewPager.SetCurrentItem(args.Position, true);
+				var tab = args.Position;
+					if (tab == 1)
 					{
-						_topRatedFragment.getTopRated();
+						_topRatedFragment.getTopRated(activity);
 					}
-				};*/
+				};
 
             SetToolbar(activity, toolbar);
         }

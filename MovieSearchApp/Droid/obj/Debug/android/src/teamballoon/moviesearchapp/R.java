@@ -2342,6 +2342,7 @@ containing a value of this type.
         public static final int middle=0x7f090034;
         public static final int mini=0x7f090021;
         public static final int movieTextView=0x7f09007d;
+        public static final int movielistview=0x7f09008d;
         public static final int multiply=0x7f09002e;
         public static final int name=0x7f090076;
         public static final int namelistview=0x7f090074;
