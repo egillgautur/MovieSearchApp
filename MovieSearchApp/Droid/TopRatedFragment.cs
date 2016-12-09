@@ -47,6 +47,7 @@ namespace MovieSearchApp.Droid
 			var listAdapter = this._rootView.FindViewById<ListView>(Resource.Id.movielistview);
 			this._movieList = await _apiService.getMovie(false, "yolo");
 			spinner.Visibility = ViewStates.Gone;
+			listAdapter.Visibility = ViewStates.Visible;
 			listAdapter.Adapter = new MovieListAdapter(context, this._movieList);
 			listAdapter.ItemClick += (sender, args) =>
 			{

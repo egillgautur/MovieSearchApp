@@ -1,7 +1,7 @@
-/Users/gautur/Desktop/FUCKOFF/MovieSearchApp/MovieSearchApp/MovieSearchApp/obj/Debug/.NETPortable,Version=v4.5,Profile=Profile7.AssemblyAttribute.cs
-/Users/gautur/Desktop/FUCKOFF/MovieSearchApp/MovieSearchApp/MovieSearchApp/bin/Debug/MovieSearchApp.dll.mdb
-/Users/gautur/Desktop/FUCKOFF/MovieSearchApp/MovieSearchApp/MovieSearchApp/bin/Debug/MovieSearchApp.dll
-/Users/gautur/Desktop/FUCKOFF/MovieSearchApp/MovieSearchApp/MovieSearchApp/obj/Debug/MovieSearchApp.dll
-/Users/gautur/Desktop/FUCKOFF/MovieSearchApp/MovieSearchApp/MovieSearchApp/obj/Debug/MovieSearchApp.dll.mdb
-/Users/gautur/Desktop/FUCKOFF/MovieSearchApp/MovieSearchApp/MovieSearchApp/bin/Debug/Newtonsoft.Json.dll
-/Users/gautur/Desktop/FUCKOFF/MovieSearchApp/MovieSearchApp/MovieSearchApp/bin/Debug/DM.MovieApi.dll
+/Users/gautur/Desktop/untitled folder/MovieSearchApp/MovieSearchApp/MovieSearchApp/obj/Debug/.NETPortable,Version=v4.5,Profile=Profile7.AssemblyAttribute.cs
+/Users/gautur/Desktop/untitled folder/MovieSearchApp/MovieSearchApp/MovieSearchApp/bin/Debug/MovieSearchApp.dll.mdb
+/Users/gautur/Desktop/untitled folder/MovieSearchApp/MovieSearchApp/MovieSearchApp/bin/Debug/MovieSearchApp.dll
+/Users/gautur/Desktop/untitled folder/MovieSearchApp/MovieSearchApp/MovieSearchApp/obj/Debug/MovieSearchApp.dll
+/Users/gautur/Desktop/untitled folder/MovieSearchApp/MovieSearchApp/MovieSearchApp/obj/Debug/MovieSearchApp.dll.mdb
+/Users/gautur/Desktop/untitled folder/MovieSearchApp/MovieSearchApp/MovieSearchApp/bin/Debug/Newtonsoft.Json.dll
+/Users/gautur/Desktop/untitled folder/MovieSearchApp/MovieSearchApp/MovieSearchApp/bin/Debug/DM.MovieApi.dll

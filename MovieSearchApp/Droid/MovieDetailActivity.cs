@@ -33,10 +33,10 @@ namespace MovieSearchApp.Droid
 			var title = this.FindViewById<TextView>(Resource.Id.title).Text = movieList.Name;
 			var info = this.FindViewById<TextView>(Resource.Id.info).Text = movieList.ReleaseYear + " | " + movieList.Runtime + " | " + movieList.Genre;
 			var overview = this.FindViewById<TextView>(Resource.Id.overview).Text = movieList.Overview;
-			var image = this.FindViewById<ImageView>(Resource.Id.image);
+
 			var file = new File(movieList.ImageName);
 			var bmimg = BitmapFactory.DecodeFile(file.AbsolutePath);
-			image.SetImageBitmap(bmimg);
+			this.FindViewById<ImageView>(Resource.Id.image).SetImageBitmap(bmimg);
 		}
 	}
 }
